@@ -4,19 +4,17 @@ export BASH_CONF="bash_profile"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+# navigate
 alias cdcode='cd ~/Desktop/code/'
-alias cdmnem='cd ~/Desktop/code/mnemosyne'
-alias cdeco='cd ~/Desktop/code/ecosys'
-alias cdalex='cd ~/Desktop/code/alexandria'
+
+
+# convenience search
 alias gr='grep -i -r --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=.yarn --exclude-dir=.docusaurus'
 alias fn='find . -name'
+
+# Git
 alias gstat='git status'
 alias gdiff='git diff'
-alias ssho='ssh orion'
-alias sshaws='ssh skim@skim-dev.ixl.dev'
-# Password: 123456
-alias sshawsroot='ssh skim-root@skim-dev.ixl.dev'
-alias sshsb='ssh -L 4000:localhost:6006 skim@orion.quiacorp.com'
 alias gpatch='git apply'
 alias gapply='git apply'
 alias gcommit='git add -A; git commit -m'
@@ -26,7 +24,6 @@ alias gco='git checkout'
 alias gdiff='git diff'
 alias gdiffs='git diff --staged'
 alias gpd='git diff origin/main...HEAD'
-alias gmergeMaster='git update; git merge --no-commit origin/master'
 alias glog='git log'
 alias glogskim='git log --author="skim" --pretty=tformat: --numstat | gawk '"'"'{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s removed lines: %s total lines: %s\n", add, subs, loc }'"'"''
 alias gstash='git stash'
