@@ -1,0 +1,18 @@
+{
+  "coc.preferences.formatOnSave": false,
+  "prettier.singleQuote": true,
+  "eslint.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "eslint.lintTask.options": [".", "--ext", ".ts", ".tsx"],
+  "eslint.experimental.useFlatConfig": true,
+  "css.validate": false,
+  "diagnostic.displayByAle": false,
+  "list.normalMappings": {
+    "<C-c>": "do:exit"
+  },
+  "list.insertMappings": {
+    "<C-c>": "do:exit"
+  },
+  "suggest.noselect": true
+}
